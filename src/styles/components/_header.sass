@@ -1,5 +1,5 @@
 @import '../abstract/_var'
-    
+
 header
     background: url('../img/banner-top.jpg') center
     background-size: cover
@@ -13,7 +13,7 @@ header
             display: flex
             width: 100%
             justify-content: space-between
-            
+
             a
                 color: black
                 font-weight: lighter
@@ -29,7 +29,7 @@ header
                 li
                     font-size: 1.4rem
                     a
-                        &:hover    
+                        &:hover
                             color: $hover-color
                             border-bottom: 1px solid black
                             transition-delay: border-bottom 500ms ease-out
@@ -61,7 +61,29 @@ header
             font-style: italic
             font-size: 1.5rem
             text-shadow: -1px -1px 10px #ffffff, 1px 1px 10px #ffffff
-            
-            
 
+@media screen and (max-width: 660px)
+    header
+        width: auto
+        .top-line
+            nav
+                a
+                    display: flex
+                    justify-content: center
+                    img
+                        width: 50%
+                ul
+                    display: none
+        .intro-message
+            a
+                font-size: 1.2rem
+                margin-top: 4rem
+            h1
+                text-align: center
+                text-transform: uppercase
+                text-shadow: -1px -1px 4px #ffffff, 1px 1px 4px #ffffff
 
+            p
+                font-style: italic
+                font-size: 1.2rem
+                text-shadow: -1px -1px 10px #ffffff, 1px 1px 10px #ffffff

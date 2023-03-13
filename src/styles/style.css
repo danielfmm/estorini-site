@@ -89,6 +89,35 @@ header .intro-message p {
   text-shadow: -1px -1px 10px #ffffff, 1px 1px 10px #ffffff;
 }
 
+@media screen and (max-width: 660px) {
+  header {
+    width: auto;
+  }
+  header .top-line nav a {
+    display: flex;
+    justify-content: center;
+  }
+  header .top-line nav a img {
+    width: 50%;
+  }
+  header .top-line nav ul {
+    display: none;
+  }
+  header .intro-message a {
+    font-size: 1.2rem;
+    margin-top: 4rem;
+  }
+  header .intro-message h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 4px #ffffff, 1px 1px 4px #ffffff;
+  }
+  header .intro-message p {
+    font-style: italic;
+    font-size: 1.2rem;
+    text-shadow: -1px -1px 10px #ffffff, 1px 1px 10px #ffffff;
+  }
+}
 #servicos {
   display: flex;
   justify-content: center;
@@ -125,6 +154,44 @@ header .intro-message p {
   margin-bottom: 0.4rem;
 }
 
+@media screen and (max-width: 1420px) {
+  #servicos {
+    display: flex;
+  }
+  #servicos .container h2 {
+    text-align: center;
+  }
+  #servicos .container .services-container {
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+  }
+  #servicos .container .services-container .services-cards {
+    min-width: 300px;
+  }
+}
+@media screen and (max-width: 980px) {
+  #servicos {
+    display: flex;
+  }
+  #servicos .container h2 {
+    text-align: center;
+  }
+  #servicos .container .services-container {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #servicos .container .services-container .services-cards {
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 660px) {
+  #servicos .container .services-container .services-cards {
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
 #equipe {
   background: #f3f4f6;
   display: flex;
@@ -148,7 +215,7 @@ header .intro-message p {
 }
 #equipe .container .staff-container .staff-card {
   background: white;
-  min-width: 250px;
+  min-width: 200px;
   padding: 1.5rem;
   border: 0.1px solid #e0e0e0;
   border-radius: 8px;
@@ -174,15 +241,80 @@ header .intro-message p {
   padding-right: 0.5rem;
 }
 
+@media screen and (max-width: 1420px) {
+  #equipe {
+    display: flex;
+  }
+  #equipe .container h2 {
+    text-align: center;
+  }
+  #equipe .container .staff-container {
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+  }
+  #equipe .container .staff-container .staff-card {
+    min-width: 300px;
+  }
+}
+@media screen and (max-width: 980px) {
+  #equipe {
+    display: flex;
+  }
+  #equipe .container h2 {
+    text-align: center;
+  }
+  #equipe .container .staff-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #equipe .container .staff-container .staff-card {
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 660px) {
+  #equipe {
+    width: auto;
+  }
+  #equipe .container .staff-container .staff-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    padding: 1rem;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+  }
+  #equipe .container .staff-container .staff-card h3 {
+    text-align: center;
+    width: 50%;
+    margin-right: 0;
+  }
+  #equipe .container .staff-container .staff-card p {
+    text-align: center;
+    width: 50%;
+    margin-right: 0;
+    padding: 1rem;
+  }
+  #equipe .container .staff-container .staff-card a {
+    width: 70%;
+  }
+  #equipe .container .staff-container .staff-card img {
+    width: 50%;
+  }
+}
 #localizacao {
   background: white;
   display: flex;
   justify-content: center;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   margin-bottom: 2rem;
 }
 #localizacao .container {
-  max-width: 1380px;
   width: 100%;
   align-self: flex-start;
 }
@@ -192,6 +324,7 @@ header .intro-message p {
 }
 #localizacao .container iframe {
   width: 100%;
+  margin-right: 1rem;
 }
 
 footer {
@@ -204,7 +337,7 @@ footer .container {
 footer .container .footer-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 footer .container .footer-container .footer-col {
   flex-direction: column;
@@ -242,4 +375,19 @@ footer .container .footer-container .creator h4 {
 }
 footer .container .footer-container .creator h4 a {
   color: white;
+}
+
+@media screen and (max-width: 800px) {
+  footer .container {
+    justify-content: center;
+    align-items: center;
+  }
+  footer .container .footer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  footer .container .footer-container .footer-social {
+    justify-content: flex-start;
+  }
 }/*# sourceMappingURL=style.css.map */

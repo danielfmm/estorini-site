@@ -8,7 +8,7 @@ footer
         .footer-container
             display: flex
             flex-flow: row wrap
-            justify-content: space-around
+            justify-content: space-evenly
             .footer-col
                 flex-direction: column
                 p
@@ -37,4 +37,17 @@ footer
                     a
                         color: white
                             
+
+@media screen and (max-width: 800px)
+    footer
+        .container
+            justify-content: center
+            align-items: center
+            .footer-container
+                display: flex
+                flex-direction: column
+                row-gap: 2rem
+                .footer-social
+                    justify-content: flex-start
+
                             
