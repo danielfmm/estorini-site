@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@100;300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@100;300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@100;300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@100;300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@100;300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@100;300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@100;300;400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  background: url("../img/banner-top.jpg") center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+header .top-line {
+  display: flex;
+  flex-flow: row wrap;
+  color: black;
+}
+header .top-line nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+header .top-line nav a {
+  color: black;
+  font-weight: lighter;
+}
+header .top-line nav a img {
+  width: 35%;
+  margin: 1rem;
+}
+header .top-line nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 1rem;
+  padding: 2rem 1rem 0 0;
+}
+header .top-line nav ul li {
+  font-size: 1.4rem;
+}
+header .top-line nav ul li a:hover {
+  color: #005555;
+  border-bottom: 1px solid black;
+  transition-delay: border-bottom 500ms ease-out;
+}
+header .intro-message {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+header .intro-message a {
+  background: white;
+  color: black;
+  padding: 1.2rem;
+  border-radius: 45px;
+}
+header .intro-message a:hover {
+  background-color: black;
+  color: white;
+  transition: all 300ms ease-in-out;
+}
+header .intro-message a i {
+  padding-right: 0.5rem;
+}
+header .intro-message h1 {
+  text-transform: uppercase;
+  text-shadow: -1px -1px 4px #ffffff, 1px 1px 4px #ffffff;
+}
+header .intro-message p {
+  font-style: italic;
+  font-size: 1.5rem;
+  text-shadow: -1px -1px 10px #ffffff, 1px 1px 10px #ffffff;
+}
+
+#servicos {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2rem;
+}
+#servicos .container {
+  max-width: 1380px;
+}
+#servicos .container h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+#servicos .container .services-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+#servicos .container .services-container .services-cards {
+  min-width: 300px;
+  padding: 4rem;
+  border: 0.1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+#servicos .container .services-container .services-cards h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+#servicos .container .services-container .services-cards ul {
+  margin-left: 2rem;
+}
+#servicos .container .services-container .services-cards ul li {
+  margin-bottom: 0.4rem;
+}
+
+#equipe {
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2rem;
+}
+#equipe .container {
+  max-width: 1380px;
+  width: 100%;
+  align-self: flex-start;
+}
+#equipe .container h2 {
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+#equipe .container .staff-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+#equipe .container .staff-container .staff-card {
+  background: white;
+  min-width: 250px;
+  padding: 1.5rem;
+  border: 0.1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+#equipe .container .staff-container .staff-card img {
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+#equipe .container .staff-container .staff-card h3 {
+  font-size: 1.4rem;
+}
+#equipe .container .staff-container .staff-card p {
+  margin-bottom: 1.2rem;
+}
+#equipe .container .staff-container .staff-card a {
+  background: #111827;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 24px;
+}
+#equipe .container .staff-container .staff-card a i {
+  padding-right: 0.5rem;
+}
+
+#localizacao {
+  background: white;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2rem;
+  margin-bottom: 2rem;
+}
+#localizacao .container {
+  max-width: 1380px;
+  width: 100%;
+  align-self: flex-start;
+}
+#localizacao .container h2 {
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+#localizacao .container iframe {
+  width: 100%;
+}
+
+footer {
+  background-color: #111827;
+  color: white;
+}
+footer .container {
+  margin: 2rem;
+}
+footer .container .footer-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+footer .container .footer-container .footer-col {
+  flex-direction: column;
+}
+footer .container .footer-container .footer-col p {
+  margin-top: 0.5rem;
+}
+footer .container .footer-container .footer-col p i {
+  padding-right: 0.5rem;
+}
+footer .container .footer-container .footer-col .footer-social {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+footer .container .footer-container .footer-col .footer-social a {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  scale: 1;
+}
+footer .container .footer-container .footer-col .footer-social a:hover {
+  scale: 1.4;
+  color: #005555;
+}
+footer .container .footer-container .creator {
+  display: flex;
+  align-items: flex-start;
+}
+footer .container .footer-container .creator img {
+  width: 10%;
+}
+footer .container .footer-container .creator h4 {
+  margin: 0.8rem;
+}
+footer .container .footer-container .creator h4 a {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
