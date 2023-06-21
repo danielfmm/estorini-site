@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,82 +9,120 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Quicksand:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body class="">
-
-    <header>
-        <div class="top-line">
-            <nav>
-                <a href="#" class="logo"><img src="./src/img/logo.png" alt=""></a>
-                <ul class="menu">
-                    <li><a href="#servicos" class="">Serviços</a></li>
-                    <li><a href="#equipe" class="">Equipe</a></li>
-                    <li><a href="#localizacao" class="">Localização</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="intro-message">
-            <h1 class="">Bem-vindo ao nosso centro de beleza</h1>
-            <p class="">Cuidamos de você da cabeça aos pés!</p>
-            <a href="#" class=""><i class="fa-brands fa-whatsapp"></i>Agende uma visita</a>
-        </div>
-
+    <header id="home">
+        <nav>
+            <ul class="menu">
+                <li><a href="" class="logo"><img src="./src/img/logo.png" alt=""></a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
 
-    <section id="servicos">
+    <section class="banner">
         <div class="container">
-            <h2>Nossos serviços</h2>
-            <div class="services-container">
-                <div class="services-cards">
-                    <h3>Cabelo</h3>
-                    <ul>
-                        <li>Corte de cabelo</li>
-                        <li>Coloração</li>
-                        <li>Hidratação</li>
-                        <li>Tratamentos para queda de cabelo</li>
-                    </ul>
-                </div>
-                <div class="services-cards">
-                    <h3>Rosto</h3>
-                    <ul>
-                        <li>Limpeza de pele</li>
-                        <li>Tratamentos para acne</li>
-                        <li>Botox</li>
-                        <li>Preenchimento labial</li>
-                    </ul>
-                </div>
-                <div class="services-cards">
-                    <h3>Corpo</h3>
-                    <ul>
-                        <li>Massagem relaxante</li>
-                        <li>Drenagem linfática</li>
-                        <li>Tratamentos para celulite</li>
-                        <li>Depilação</li>
-                    </ul>
-                </div>
-            </div>
+            <img src="./src/img/banner_top.png" alt="">
+            <h1 class="title">Cuidamos de você da cabeça aos pés</h1>
         </div>
     </section>
+
+    <section id="servicos">
+        <h2 class="title">Nossos Serviços</h2>
+
+        <div class="container">
+            <img src="./src/img/services_hair.png" alt="">
+            <div class="service">
+                <h3 class="list_title">Cabelo</h3>
+                <ul class="list">
+                    <li>Corte de cabelo</li>
+                    <li>Coloração</li>
+                    <li>Hidratação</li>
+                    <li>Tratamentos para queda de cabelo</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="reverse container">
+            <img src="./src/img/services_face.png" alt="">
+            <div class="service">
+                <h3 class="list_title">Rosto</h3>
+                <ul class="list">
+                    <li>Limpeza de pele</li>
+                    <li>Tratamento de acne</li>
+                    <li>Botox</li>
+                    <li>Preenchimento labial</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <img src="./src/img/services_body.png" alt="">
+            <div class="service">
+                <h3 class="list_title">Corpo</h3>
+                <ul class="list">
+                    <li>Massagem relaxante</li>
+                    <li>Drenagem linfática</li>
+                    <li>Tratamentos para celulite</li>
+                    <li>Depilação</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
 
     <section id="equipe">
-        <div class="container">
-            <h2 class="">Nossa equipe</h2>
-            <div class="staff-container">
-                <div class="staff-card">
-                    <img src="https://source.unsplash.com/400x400/?woman" alt="" class="">
-                    <h3>Julia Costa</h3>
-                    <p>Cabeleireira</p>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i>Agendar com Julia</a>
+        <div class="bg">
+            <h2>Equipe</h2>
+
+            <div class="container">
+
+                <div class="profile">
+                    <img src="./src/img/profile_female.png" alt="">
+                    <div class="info">
+
+                        <p class="name">Nome Sobrenome</p>
+                        <ul class="roles">
+                            <li>Cabeleireira</li>
+                            <li>Designer de Unha</li>
+                            <li>
+                                <p class="contratar"><a href="">Contratar</a></p>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
-                <div class="staff-card">
-                    <img src="https://source.unsplash.com/400x400/?man" alt="" class="">
-                    <h3>Pedro Santos</h3>
-                    <p>Esteticista</p>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i>Agendar com Pedro</a>
+
+                <div class="profile">
+                    <img src="./src/img/profile_male.png" alt="">
+                    <div class="info">
+
+                        <p class="name">Nome Sobrenome</p>
+                        <ul class="roles">
+                            <li>Cabeleireiro</li>
+                            <li>Massagista</li>
+                            <li>
+                                <p class="contratar"><a href="">Contratar</a></p>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
 
             </div>
@@ -92,24 +130,40 @@
         </div>
     </section>
 
-    <section class="" id="localizacao">
-        <div class="container">
-            <h2 class="">Nos faça uma visita</h2>
-            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-                src="https://www.google.com/maps/embed/v1/place?q=place_id:EmlSdWEgRG9tIEpvYXF1aW0gU2lsdsOpcmlvLCA2NTAgLSBzYWxhIDAxIC0gQ29yYcOnw6NvIEV1Y2Fyw61zdGljbywgQmVsbyBIb3Jpem9udGUgLSBNRywgMzA1MzUtNjIwLCBCcmF6aWwiIxohChYKFAoSCScadEL6lqYAEekg9UmTdVxEEgdzYWxhIDAx&key=..."></iframe>
-        </div>
-    </section>
+    <section id="contato">
+        <h2 class="">Nos faça uma visita</h2>
 
+        <div class="container">
+
+            <div class="footer-col">
+
+
+                <div class="address">
+                    <i class="fa-sharp fa-solid fa-map-location-dot"></i>
+                    <p>Rua Dom Joaquim Silvério, 650 - Sala 01 - Coração Eucarístico</p>
+                </div>
+                <div class="tel">
+                    <i class="fas fa-square-phone"></i>
+                    <p>(31) 3375-8405</p>
+                </div>
+                <div class="button">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                    <p><a href="" class="schedule">Agende uma visita</a></p>
+                </div>
+            </div>
+
+            <iframe width="800" height="600" loading="lazy" allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:EmlSdWEgRG9tIEpvYXF1aW0gU2lsdsOpcmlvLCA2NTAgLSBzYWxhIDAxIC0gQ29yYcOnw6NvIEV1Y2Fyw61zdGljbywgQmVsbyBIb3Jpem9udGUgLSBNRywgMzA1MzUtNjIwLCBCcmF6aWwiIxohChYKFAoSCScadEL6lqYAEekg9UmTdVxEEgdzYWxhIDAx&key=AIzaSyDgGANI8coyHNjOjsSQCzDnuJA8urjKJWo">
+            </iframe>
+
+        </div>
+
+    </section>
 
     <footer>
         <div class="container">
             <div class="footer-container">
-                <div class="footer-col">
-                    <h4>Centro de Beleza</h4>
-                    <p><i class="fas fa-map-marker-alt"></i>Rua Dom Joaquim Silvério, 650 - Sala 01 - Coração
-                        Eucarístico</p>
-                    <p><i class="fas fa-phone"></i>(31) 3375-8405</p>
-                </div>
+
                 <div class="footer-col">
                     <h4 class="">Siga-nos nas redes sociais</h4>
                     <div class="footer-social">
@@ -124,9 +178,8 @@
                     </div>
                 </div>
                 <div class="creator">
-                    <img src="https://danielferraz.dev/imgs/dev_logo.png" alt="">
                     <h4>
-                        <a href="https://danielferraz.dev/">Desenvolvido por Daniel Ferraz</a>
+                        <a href="https://danielferraz.dev/">Desenvolvido por DWB</a>
                     </h4>
                 </div>
             </div>
@@ -134,10 +187,6 @@
 
         </div>
     </footer>
-
-
-
-
 
 </body>
 

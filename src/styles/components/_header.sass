@@ -1,89 +1,27 @@
 @import '../abstract/_var'
 
 header
-    background: url('../img/banner-top.jpg') center
-    background-size: cover
-    height: 100vh
-    width: 100%
-    .top-line
+    position: fixed
+    top: 0
+    background-color: $first-section-color
+    box-shadow: 0rem 1rem 1.2rem rgba(0, 0, 0, 0.12)
+    padding: 1rem 0 1rem 0
+    z-index: 1
+    width: $max-size
+    nav
         display: flex
-        flex-flow: row wrap
-        color: black
-        nav
+        flex-flow: row nowrap
+        .menu  
             display: flex
-            width: 100%
-            justify-content: space-between
-
-            a
-                color: black
-                font-weight: lighter
-                img
-                    width: 35%
-                    margin: 1rem
-            ul
-                display: flex
-                flex-direction: row
-                list-style-type: none
-                gap: 1rem
-                padding: 2rem 1rem 0 0
-                li
-                    font-size: 1.4rem
-                    a
-                        &:hover
-                            color: $hover-color
-                            border-bottom: 1px solid black
-                            transition-delay: border-bottom 500ms ease-out
-    .intro-message
-        margin-top: 6rem
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        gap: 4rem
-
-        a
-            background: white
-            color: black
-            padding: 1.2rem
-            border-radius: 45px
-            &:hover
-                background-color: black
-                color: white
-                transition: all 300ms ease-in-out
-            i
-                padding-right: .5rem
-
-        h1
-            text-transform: uppercase
-            text-shadow: -1px -1px 4px #ffffff, 1px 1px 4px #ffffff
-
-        p
-            font-style: italic
-            font-size: 1.5rem
-            text-shadow: -1px -1px 10px #ffffff, 1px 1px 10px #ffffff
-
-@media screen and (max-width: 660px)
-    header
-        width: auto
-        .top-line
-            nav
+            align-items: center
+            flex-flow: row nowrap
+            list-style: none
+            width: $max-size
+            justify-content: space-evenly
+            li
+                font-size: 1.5rem
                 a
-                    display: flex
-                    justify-content: center
-                    img
-                        width: 50%
-                ul
-                    display: none
-        .intro-message
-            a
-                font-size: 1.2rem
-                margin-top: 4rem
-            h1
-                text-align: center
-                text-transform: uppercase
-                text-shadow: -1px -1px 4px #ffffff, 1px 1px 4px #ffffff
-
-            p
-                font-style: italic
-                font-size: 1.2rem
-                text-shadow: -1px -1px 10px #ffffff, 1px 1px 10px #ffffff
+                    color: inherit
+                    &:hover
+                        color: $hover-color
+                        text-shadow: 0rem 0.1rem 0.2rem black

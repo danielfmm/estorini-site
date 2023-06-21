@@ -1,102 +1,51 @@
-@import '../abstract/_var.sass'
+@import url('../abstract/_var')
 
 #equipe
-    background: $first-section-color
-    display: flex
-    justify-content: center
-    padding: 2rem 2rem
+    .bg
+        background: $second-section-color
+    
+    h2
+        font-weight: 700
+        font-size: 2.2rem
+        padding: 3.5rem 0rem 1rem 8rem
+
     .container
-        max-width: $max-size
-        width: 100%
-        align-self: flex-start
-        h2
-            padding-bottom: 2rem
-            font-size: 2rem
-
-        .staff-container
+        padding: 1rem
+        margin: 2rem
+        display: flex
+        flex-flow: row nowrap
+        justify-content: space-evenly
+        .profile
             display: flex
-            flex-flow: row wrap
-            gap: 2rem
-            justify-content: flex-start
+            flex-flow: column nowrap
+            align-items: center
 
-            .staff-card
-                background: white
-                min-width: 200px
-                padding: 1.5rem
-                border: .1px solid #e0e0e0
-                border-radius: 8px
-                box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)
-                img
-                    border-radius: 50%
-                    margin-bottom: .5rem
-                h3
-                    font-size: 1.4rem
-
-                p
-                    margin-bottom: 1.2rem
-
-                a
-                    background: $second-section-color
-                    color: white
-                    padding: .5rem
-                    border-radius: 24px
-                    i
-                        padding-right: .5rem
-
-@media screen and (max-width: 1420px)
-    #equipe
-        display: flex
-        .container
-            h2
-                text-align: center
-            .staff-container
-                justify-content: left
-                align-items: center
-                gap: 1rem
-                .staff-card
-                    min-width: 300px
-
-@media screen and (max-width: 980px)
-    #equipe
-        display: flex
-        .container
-            h2
-                text-align: center
-            .staff-container
-                justify-content: center
-                align-items: center
-                flex-direction: column
-                gap: 1rem
-                .staff-card
-                    min-width: 400px
-
-@media screen and (max-width: 660px)
-    #equipe
-        width: auto
-        .container
-            .staff-container
-                .staff-card
+            img
+                padding: 0 1rem 1rem 1rem        
+                border-radius: 1.4rem
+            
+            .info
+                justify-content: space-evenly
+                .name
+                    font-weight: 700
+                    font-size: 1.5rem
+                    padding-bottom: .5rem
+                .roles
                     display: flex
-                    flex-direction: column
-                    justify-content: center
+                    flex-flow: column nowrap
                     align-items: center
-                    min-width: 100px
-                    padding: 1rem
-                    border-radius: 0
-                    border: none
+                    li
+                        padding: .2rem
+                        font-size: 1.2rem
+                        .contratar
+                            margin: 1.8rem
+                            padding: 1rem
+                            border-radius: 10%
+                            background: $dark-button-color
+                            a
+                                color: $font-color-second
+                                &:hover
+                                    text-shadow: 0rem 0.1rem 0.2rem $font-color-second
 
-                    margin: 0
-                    h3
-                        text-align: center
-                        width: 50%
-                        margin-right: 0
-
-                    p
-                        text-align: center
-                        width: 50%
-                        margin-right: 0
-                        padding: 1rem
-                    a
-                        width: 70%
-                    img
-                        width: 50%
+                    
+                
