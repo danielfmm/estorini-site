@@ -1,16 +1,96 @@
 @import '../abstract/_var'
 
 .banner
-    padding-top: 13rem
+    width: 100%
     .container
-        img
-            width: $max-size
+        padding-top: 13rem
+        position: relative
+        background-image: url("../img/banner_top.png")
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        display: block
+        height: 700px
+
         h1
             position: absolute
-            top: 50%
+            top: 60%
             left: 50%
             transform: translate(-50%, -50%)
             color: $font-color-over
-            text-align: center
             font-family: $second-font
             font-size: 3rem
+
+        .button
+            background: $first-section-color
+            font-weight: 700
+            position: absolute
+            top: 70%
+            left: 50%
+            transform: translate(-50%, -50%)
+            color: $font-color
+            font-family: $first-font
+            font-size: 1.5rem
+            padding: .8rem 1rem
+            box-shadow: 0rem 0rem 1rem .04rem rgba(0, 0, 0, 0.2)
+            border-radius: 2rem
+            .schedule
+                display: flex
+                flex-flow: row nowrap
+                justify-content: space-between
+                text-align: center
+                align-items: center
+                color: $font-color
+                i
+                    font-size: 2rem
+                    color: #25D366
+                    padding-right: 1rem
+                    padding-left: 1rem
+
+@media screen and (max-width: 1024px)
+    .banner
+        .container
+            background-position: 30%
+            height: 500px
+            .title
+                top: 55%
+                font-size: 3rem
+
+            .button
+                top: 65%
+                left: 50%
+                position: absolute
+                box-shadow: 0rem 0rem .5rem .005rem rgba(0, 0, 0, 0.2)
+
+                a
+                    padding-right: .5rem
+                p
+
+                    display: block
+
+
+@media screen and (max-width: 1024px)
+    .banner
+        .container
+            .title
+                width: 100%
+                top: 80%
+                text-align: center
+                
+            .button
+                top: 90%
+
+@media screen and (max-width: 632px)
+    .banner
+        .container
+            background-size: auto auto
+            .title
+                width: 100%
+                top: 75%
+                text-align: center
+                font-size: 2rem
+                
+            .button
+                top: 85%
+                font-size: 1rem
+                padding: .8rem .01rem

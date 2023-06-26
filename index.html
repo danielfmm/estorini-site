@@ -20,40 +20,47 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body class="">
-    <header id="home">
-        <nav>
+<body>
+    <header>
+        <a href="" class="logo"><img src="./src/img/logo.png" alt=""></a>
+        <nav class="container">
             <ul class="menu">
-                <li><a href="" class="logo"><img src="./src/img/logo.png" alt=""></a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#equipe">Equipe</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li class="itens"><a href="">Home</a></li>
+                <li class="itens"><a href="#servicos">Serviços</a></li>
+                <li class="itens"><a href="#equipe">Equipe</a></li>
+                <li class="itens"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+        <i class="fa-solid fa-bars m_menu" id="m_menu"></i>
     </header>
 
 
     <section class="banner">
         <div class="container">
-            <img src="./src/img/banner_top.png" alt="">
+            <!-- <img src="./src/img/banner_top.png" alt=""> -->
             <h1 class="title">Cuidamos de você da cabeça aos pés</h1>
+            <div class="button">
+                <a href="" class="schedule">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                    <p>Agende uma visita</p>
+                </a>
+            </div>
         </div>
     </section>
 
-    <section id="servicos">
+    <section id="servicos" class="servicos">
         <h2 class="title">Nossos Serviços</h2>
 
         <div class="container">
             <img src="./src/img/services_hair.png" alt="">
             <div class="service">
-                <h3 class="list_title">Cabelo</h3>
-                <ul class="list">
-                    <li>Corte de cabelo</li>
-                    <li>Coloração</li>
-                    <li>Hidratação</li>
-                    <li>Tratamentos para queda de cabelo</li>
-                </ul>
+                    <h3 class="list_title">Cabelo</h3>
+                    <ul class="list">
+                        <li>Corte de cabelo</li>
+                        <li>Coloração</li>
+                        <li>Hidratação</li>
+                        <li>Tratamentos para queda de cabelo</li>
+                    </ul>
             </div>
         </div>
 
@@ -87,7 +94,7 @@
     </section>
 
 
-    <section id="equipe">
+    <section id="equipe" class="equipe">
         <div class="bg">
             <h2>Equipe</h2>
 
@@ -130,7 +137,7 @@
         </div>
     </section>
 
-    <section id="contato">
+    <section id="contato" class="contato">
         <h2 class="">Nos faça uma visita</h2>
 
         <div class="container">
@@ -187,7 +194,7 @@
 
         </div>
     </footer>
-
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
