@@ -4,16 +4,13 @@
   text-decoration: none;
 }
 
-body {
+body #servicos, body #equipe, body #contato {
+  padding-top: 6.5rem;
+  margin-top: -6.5rem;
   max-width: 1280px;
   font-family: "Quicksand", sans-serif;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0rem 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
-}
-body section {
-  padding-top: 6.5rem;
-  margin-top: -6.5rem;
 }
 
 @media screen and (max-width: 1280px) {
@@ -39,7 +36,6 @@ body section {
 }
 header {
   width: 100%;
-  max-width: 1280px;
   position: fixed;
   background: #FFFFFF;
   background-position: center;
@@ -66,7 +62,7 @@ header .container .menu {
 }
 header .container .menu .itens {
   padding: 0.1rem 3rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 header .container .menu .itens a {
   color: inherit;
@@ -120,13 +116,13 @@ header .m_menu {
     right: 0;
     left: 0;
     bottom: 0;
-    padding-top: 20%;
+    padding-top: 40%;
     gap: 2rem;
   }
   header .container .menu .itens {
     width: 70%;
     background: #EDEDED;
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -140,10 +136,10 @@ header .m_menu {
   position: relative;
   background-image: url("../img/banner_top.png");
   background-size: cover;
-  background-position: center;
+  background-position: center 3rem top 6rem;
   background-repeat: no-repeat;
   display: block;
-  height: 700px;
+  height: 100vh;
 }
 .banner .container h1 {
   position: absolute;
@@ -342,6 +338,7 @@ header .m_menu {
   width: 100%;
 }
 #equipe .bg {
+  border-radius: 2rem;
   background: #EDEDED;
 }
 #equipe h2 {
@@ -496,7 +493,6 @@ footer {
   width: 100%;
   background-color: #EDEDED;
   color: #000000;
-  width: 1280px;
 }
 footer .container .footer-container {
   display: flex;
